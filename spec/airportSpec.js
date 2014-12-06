@@ -28,5 +28,7 @@ describe('Airport', function(){
 		expect(airport.planes).toEqual([])
 	});
 
+	it("has sunny weather")
+
 });
 
