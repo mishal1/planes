@@ -1,10 +1,12 @@
-describe("Plane", function(){
+'use strict';
+var Plane = require('../lib/plane');
 
-	var plane, airport; 
+describe("Plane", function(){
+	var plane, airport;
 
 	beforeEach(function(){
 		plane = new Plane();
-		airport = jasmine.createSpyObj('airport', ['hold', 'release'])
+		airport = jasmine.createSpyObj('airport', ['hold', 'release']);
 	});
 
 	it("should be defined", function(){
@@ -21,18 +23,18 @@ describe("Plane", function(){
 	});
 
 	it("can fly", function(){
-		plane.land(airport)
-		plane.fly(airport)
+		plane.land(airport);
+		plane.fly(airport);
 		expect(plane.flying).toBe(true);
 	});
 
 	it("lands in an airport", function(){
-		plane.land(airport)
+		plane.land(airport);
 		expect(airport.hold).toHaveBeenCalled();
 	});
 
 	it("flys out of an airporrt", function(){
-		plane.fly(airport)
+		plane.fly(airport);
 		expect(airport.release).toHaveBeenCalled();
 	});
 
