@@ -1,12 +1,17 @@
-Airport Task
-============
+#Airport
+Javascript Practice
 
-Plane:
-- it can land in an airport
-- it can take off out of an airport
+##Brief
+Imagine you're writing software to control the flow of planes at an airport. The planes can land and take off provided that the weather is sunny. Occasionally it may be stormy, in which case no planes can land or take off.
 
-Airport:
-- it can hold planes
-- it can release planes
-- A plane cannot land or take off if the weather is stormy 
-- A plane can land or take off if the weather is sunny 
+Your task is to create a set of classes/modules to makes the given test suite pass. You will need to use random number generator to set the weather (it is normally sunny but on rare occasions it may be stormy). In your tests, you'll need to use a double to override random weather. Finally, every plane must have a status indicating whether it's flying or landed.
+
+##Learning Objectives
+- Javascript
+- OOD
+- OOP
+- TDD
+
+##Technology Used
+- Javascript
+- Jasmine
